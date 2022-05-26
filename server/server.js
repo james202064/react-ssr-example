@@ -10,6 +10,10 @@ import { postHandler } from './pageHandlers';
 
 const PORT = 8000;
 
+console.log('REACT_APP_WEBSITE_NAME', process.env.REACT_APP_WEBSITE_NAME);
+console.log('REACT_APP_API_URL', process.env.REACT_APP_API_URL);
+console.log('REACT_APP_MEDIA_BASE', process.env.REACT_APP_MEDIA_BASE);
+
 const app = express();
 
 // app.use('^/$', (req, res, next) => {

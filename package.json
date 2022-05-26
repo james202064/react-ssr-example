@@ -13,6 +13,7 @@
     "axios": "^0.27.2",
     "express": "^4.18.1",
     "ignore-styles": "^5.0.1",
+    "pm2": "^5.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -23,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "ssr": "node server/index.js"
+    "ssr": "node server/index.js",
+    "deploy": "pm2 start --no-daemon ecosystem.config.js"
   },
   "eslintConfig": {
     "extends": [
