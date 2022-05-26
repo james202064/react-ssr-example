@@ -13,7 +13,9 @@ const PORT = 8000;
 console.log('REACT_APP_WEBSITE_NAME', process.env.REACT_APP_WEBSITE_NAME);
 console.log('REACT_APP_API_URL', process.env.REACT_APP_API_URL);
 console.log('REACT_APP_MEDIA_BASE', process.env.REACT_APP_MEDIA_BASE);
-
+console.log('args', process.argv);
+console.log('NODE_ENV', process.env.NODE_ENV);
+// console.log('ENV', process.env);
 const app = express();
 
 // app.use('^/$', (req, res, next) => {
